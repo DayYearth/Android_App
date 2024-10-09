@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView to display result -->
+    <TextView
+        android:id="@+id/displayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#E0E0E0"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="0"
+        android:textSize="48sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Layout for Calculator Buttons -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- First row: CE, C, BS, / -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="CE" android:id="@+id/btnCE" style="@style/ButtonStyle"/>
+            <Button android:text="C" android:id="@+id/btnC" style="@style/ButtonStyle"/>
+            <Button android:text="BS" android:id="@+id/btnBS" style="@style/ButtonStyle"/>
+            <Button android:text="/" android:id="@+id/btnDivide" style="@style/ButtonStyle"/>
+        </LinearLayout>
+
+        <!-- Second row: 7, 8, 9, x -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="7" android:id="@+id/btn7" style="@style/ButtonStyle"/>
+            <Button android:text="8" android:id="@+id/btn8" style="@style/ButtonStyle"/>
+            <Button android:text="9" android:id="@+id/btn9" style="@style/ButtonStyle"/>
+            <Button android:text="x" android:id="@+id/btnMultiply" style="@style/ButtonStyle"/>
+        </LinearLayout>
+
+        <!-- Third row: 4, 5, 6, - -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="4" android:id="@+id/btn4" style="@style/ButtonStyle"/>
+            <Button android:text="5" android:id="@+id/btn5" style="@style/ButtonStyle"/>
+            <Button android:text="6" android:id="@+id/btn6" style="@style/ButtonStyle"/>
+            <Button android:text="-" android:id="@+id/btnSubtract" style="@style/ButtonStyle"/>
+        </LinearLayout>
+
+        <!-- Fourth row: 1, 2, 3, + -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="1" android:id="@+id/btn1" style="@style/ButtonStyle"/>
+            <Button android:text="2" android:id="@+id/btn2" style="@style/ButtonStyle"/>
+            <Button android:text="3" android:id="@+id/btn3" style="@style/ButtonStyle"/>
+            <Button android:text="+" android:id="@+id/btnAdd" style="@style/ButtonStyle"/>
+        </LinearLayout>
+
+        <!-- Fifth row: +/-, 0, ., = -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:text="+/-" android:id="@+id/btnPlusMinus" style="@style/ButtonStyle"/>
+            <Button android:text="0" android:id="@+id/btn0" style="@style/ButtonStyle"/>
+            <Button android:text="." android:id="@+id/btnDot" style="@style/ButtonStyle"/>
+            <Button android:text="=" android:id="@+id/btnEquals" style="@style/ButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
